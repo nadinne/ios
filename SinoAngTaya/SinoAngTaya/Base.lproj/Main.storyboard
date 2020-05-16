@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Sino_ang_taya_" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.80000000000000004" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="SinoAngTaya-bg" translatesAutoresizingMaskIntoConstraints="NO" id="7pz-sJ-lfO">
+                                <rect key="frame" x="0.0" y="5" width="414" height="896"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="896" id="KG8-fo-kjG"/>
+                                    <constraint firstAttribute="width" constant="414" id="MN0-mE-Cfu"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sino ang mga kasali?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OyD-wG-JTu">
+                                <rect key="frame" x="118" y="108" width="178" height="23"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Topi, Toiny, Yogi" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="0A3-FY-dlu">
+                                <rect key="frame" x="30" y="136" width="354" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="354" id="YTM-Xf-sSw"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="alphabet" keyboardAppearance="alert" smartQuotesType="no" textContentType="name"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Anong gagawin ng taya?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MuO-Pt-0Zc">
+                                <rect key="frame" x="100.5" y="184" width="213.5" height="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Maghuhugas ng pinggan" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="Kf7-IQ-oZY">
+                                <rect key="frame" x="30" y="216" width="354" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="354" id="2xF-Jr-mtV"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="alphabet" keyboardAppearance="alert" smartQuotesType="no"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MfY-s4-dN4">
+                                <rect key="frame" x="30.5" y="284" width="353" height="53"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="53" id="ZMS-qp-c5o"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="353" id="xuz-dF-PR5"/>
+                                </constraints>
+                                <state key="normal" title="Piliin ang taya">
+                                    <color key="titleColor" red="1" green="0.99215686270000003" blue="0.97647058819999999" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="randomize:" destination="BYZ-38-t0r" eventType="touchUpInside" id="h4F-gd-dWj"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="clip" numberOfLines="10" baselineAdjustment="alignBaselines" minimumFontSize="13" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="CDi-Me-X3S">
+                                <rect key="frame" x="57" y="500" width="300" height="300"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="CDi-Me-X3S" secondAttribute="height" multiplier="1:1" id="HlG-PX-dp5"/>
+                                    <constraint firstAttribute="width" constant="300" id="qIk-UY-FKb"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="0A3-FY-dlu" firstAttribute="top" secondItem="OyD-wG-JTu" secondAttribute="bottom" constant="5" id="16E-H9-Cyn"/>
+                            <constraint firstItem="OyD-wG-JTu" firstAttribute="width" secondItem="6Tk-OE-BBY" secondAttribute="width" multiplier="0.429952" id="339-dK-u6V"/>
+                            <constraint firstItem="OyD-wG-JTu" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="8m7-o6-4N4"/>
+                            <constraint firstItem="CDi-Me-X3S" firstAttribute="centerX" secondItem="7pz-sJ-lfO" secondAttribute="centerX" id="QTN-BX-sHK"/>
+                            <constraint firstItem="CDi-Me-X3S" firstAttribute="top" secondItem="7pz-sJ-lfO" secondAttribute="bottom" constant="-401" id="ZmA-kD-lNk"/>
+                            <constraint firstItem="MuO-Pt-0Zc" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="a5Y-r0-Grk"/>
+                            <constraint firstItem="Kf7-IQ-oZY" firstAttribute="centerX" secondItem="MuO-Pt-0Zc" secondAttribute="centerX" id="aV8-Hf-0W1"/>
+                            <constraint firstItem="MfY-s4-dN4" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="c21-6R-TcB"/>
+                            <constraint firstItem="OyD-wG-JTu" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="64" id="ewC-DV-CQl"/>
+                            <constraint firstItem="7pz-sJ-lfO" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="fgF-Xj-Dgm"/>
+                            <constraint firstItem="0A3-FY-dlu" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="hN5-i1-cjc"/>
+                            <constraint firstItem="MfY-s4-dN4" firstAttribute="top" secondItem="Kf7-IQ-oZY" secondAttribute="bottom" constant="34" id="oH4-Nn-Te6"/>
+                            <constraint firstItem="MuO-Pt-0Zc" firstAttribute="top" secondItem="0A3-FY-dlu" secondAttribute="bottom" constant="14" id="te3-as-Xtb"/>
+                            <constraint firstItem="7pz-sJ-lfO" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="uuY-7x-dis"/>
+                            <constraint firstItem="Kf7-IQ-oZY" firstAttribute="top" secondItem="MuO-Pt-0Zc" secondAttribute="bottom" constant="8" id="w4g-HT-v7C"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="lblRandomResult" destination="CDi-Me-X3S" id="0yR-OX-JUN"/>
+                        <outlet property="tfParticipantNames" destination="0A3-FY-dlu" id="Iqv-ae-AJJ"/>
+                        <outlet property="tfTaskDescription" destination="Kf7-IQ-oZY" id="xgF-Sh-rdB"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="126.5625"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="SinoAngTaya-bg" width="1080" height="1920"/>
+    </resources>
+</document>
